@@ -85,10 +85,8 @@ cp .env.example .env
 
 4. Update `.env` with your MongoDB Atlas connection string and JWT secret:
 ```env
-PORT=5000
 MONGODB_URI=your_mongodb_atlas_connection_string_here
 JWT_SECRET=your_super_secret_jwt_key_here_change_this_in_production
-NODE_ENV=development
 ```
 
 5. Start the backend server:
@@ -203,9 +201,8 @@ Authorization: Bearer jwt_token_here
 
 ## 🚢 Deployment
 
-### Quick Deploy to Vercel
 
-#### Option 1: Deploy Both Frontend and Backend to Vercel (Recommended)
+#### Deployed Both Frontend and Backend to Vercel 
 
 **Frontend:**
 1. Push code to GitHub
@@ -221,18 +218,10 @@ Authorization: Bearer jwt_token_here
 2. Set **Root Directory** to `backend`
 3. Add environment variables:
    - `MONGODB_URI`: Your MongoDB Atlas connection string
-   - `JWT_SECRET`: A secure random string (e.g., `openssl rand -base64 32`)
+   - `JWT_SECRET`: A secure random string
 4. Click "Deploy"
 5. Copy the backend URL and update `NEXT_PUBLIC_API_URL` in frontend project
 
-#### Option 2: Frontend on Vercel, Backend on Render/Railway
-
-**Backend (Render):**
-1. Go to [render.com](https://render.com)
-2. Create new Web Service
-3. Connect GitHub repo, set root directory to `backend`
-4. Build: `npm install`, Start: `npm start`
-5. Add environment variables (MONGODB_URI, JWT_SECRET)
 
 **Frontend (Vercel):**
 1. Deploy to Vercel as above
@@ -248,13 +237,6 @@ Authorization: Bearer jwt_token_here
 4. Whitelist your IP address (or use 0.0.0.0/0 for development)
 5. Get your connection string and use it in your `.env` file
 
-## 🎨 UI Colors
-
-The application uses a pleasant color scheme:
-- **Sky Blue**: Primary actions and accents
-- **Green**: Success states and signup buttons
-- **White**: Background and cards
-- **Grey**: Text and borders
 
 ## 📝 Notes
 
@@ -270,10 +252,6 @@ The application uses a pleasant color scheme:
 - Protected API routes with authentication middleware
 - CORS enabled for cross-origin requests
 - Input validation on both frontend and backend
-
-## 📄 License
-
-This project is open source and available for portfolio use.
 
 ## 👤 Author
 
