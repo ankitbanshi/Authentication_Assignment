@@ -11,6 +11,16 @@ A full-stack web application with role-based authentication (User/Admin) built w
 - **Modern UI**: Beautiful, responsive design with TailwindCSS
 - **TypeScript**: Full type safety across frontend and backend
 
+
+## 🌐 Live Deployment
+
+### 🔸 Frontend (Next.js)
+**Live URL:** [https://your-frontend-url.vercel.app](https://authx-teal.vercel.app/login)
+
+### 🔸 Backend (Express API)
+**API Base URL:** [https://your-backend-url.vercel.app](https://authentication-assignment-backend.vercel.app/)
+
+
 ## 📋 Tech Stack
 
 ### Backend
